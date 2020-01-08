@@ -80,6 +80,52 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="GRISversion1" />
+        <Button
+            android:id="@+id/buttonFlou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Flou" />
+        <Button
+            android:id="@+id/buttonConvolutionSobel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filtre Sobel" />
+        <Button
+            android:id="@+id/buttonConvolutionPrewitt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Filtre Prewitt" />
+
+        <Button
+            android:id="@+id/buttonGrisRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="GrisRS" />
+        <Button
+            android:id="@+id/buttonColoriseRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="coloriseRS" />
+
+        <Button
+            android:id="@+id/buttonRedOnlyRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="redOnlyRS" />
+
+        <Button
+            android:id="@+id/buttonEqualHistoRS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="histoRS" />
+
     </LinearLayout>
 
     </ScrollView>
@@ -137,12 +183,38 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="32dp"
         android:text="Rodin DUHAYON Application"
         android:textSize="18dp"
         android:textStyle="bold|italic"
-        app:layout_constraintEnd_toStartOf="@+id/buttonReset"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/buttonReset"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="64dp"
+        android:text="Application Rodin Duhayon"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNextPicture" />
 </androidx.constraintlayout.widget.ConstraintLayout>
